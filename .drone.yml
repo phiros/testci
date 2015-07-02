@@ -16,4 +16,6 @@ script:
     - git branch
     - git remote -v
     - git branch -avv
+    - echo "force global test" >> README.md
+    - git commit -a -m"force global test"
     - ./dist/tools/drone-scripts/build_and_test.sh riot/master
